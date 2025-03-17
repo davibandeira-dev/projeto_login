@@ -39,25 +39,26 @@ main {
 }
 
 section#login {
-  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   /* Overflow -> Transbordar */
   overflow: hidden;
-
+  
   background-color: white;
   width: 300px;
   height: 500px;
   border-radius: 20px;
   /* Não terá nenhum tipo de deslocamento. */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
+  transition: width 0.3s, height 0.3s;
 }
 
 section#login > div#image{
+  display: block;
   background: var(--cor3) url('img/photo.jpg') no-repeat left center / cover;
-  height: 200px;
+  height: 250px;
 }
 
 section#login > div#form{
@@ -75,4 +76,5 @@ div > p{
   text-align: justify;
   padding: 10px;
 }
+
 
