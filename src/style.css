@@ -48,22 +48,25 @@ section#login {
   
   background-color: white;
   width: 300px;
-  height: 500px;
+  height: 530px;
   border-radius: 20px;
   /* Não terá nenhum tipo de deslocamento. */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
+
   transition: width 0.3s, height 0.3s;
+  transition-timing-function: ease;
 }
 
 section#login > div#image{
   display: block;
   background: var(--cor3) url('img/photo.jpg') no-repeat left center / cover;
-  height: 250px;
+  height: 200px;
 }
 
 section#login > div#form{
   display: block;
   margin-top: 10px;
+  padding: 10px;
 }
 
 div > h1{
@@ -71,10 +74,54 @@ div > h1{
 }
 
 div > p{
-  margin-left: 10px;
-  margin-right: 10px;
   text-align: justify;
-  padding: 10px;
+  font-size: 0.8em;
 }
 
+form > div.campo{
+  background-color: var(--cor2);
+  height: 40px;
+  border-radius: 5px;
+  padding-top: 5px;
+  margin: 8px 0px;
+}
+
+div.campo > label{
+  display: none;
+}
+
+div#form > form > input[type="submit"]{
+  display: block;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  background-color: var(--cor1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+div#form > form > input[type="submit"]:hover{
+  background-color: var(--cor2);
+  cursor: pointer;
+}
+
+div#form > form > a.botao{
+    display: block;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 8px;
+    background-color: #5fc970;
+    border-radius: 5px;
+    border: 1px solid #367440;
+    text-decoration: none;
+    color: white;
+}
+
+div#form > form > a.botao > span{
+  font-size: 0.8em;
+}
 
